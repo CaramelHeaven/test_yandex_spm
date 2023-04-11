@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "test_yandex_spm",
+    name: "YandexMapsSpm",
     platforms: [
         // Add support for all platforms starting from a specific version.
         .iOS(.v13),
@@ -12,8 +12,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "test_yandex_spm",
-            targets: ["test_yandex_spm"]),
+            name: "YandexMapsSpm",
+            targets: ["YandexMapsSpm"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,12 +23,12 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "test_yandex_spm",
+            name: "YandexMapsSpm",
             dependencies: []
         ),
         .testTarget(
-            name: "test_yandex_spmTests",
-            dependencies: ["test_yandex_spm"]
+            name: "YandexMapsSpmTests",
+            dependencies: ["YandexMapsSpm"]
         ),
         .binaryTarget(
             name: "YandexMapsMobile",

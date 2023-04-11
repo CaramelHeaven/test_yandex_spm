@@ -1,3 +1,3 @@
-# test_yandex_spm
+# YandexMapsSpm
 
 A description of this package.
