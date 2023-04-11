@@ -8,4 +8,8 @@ public struct test_yandex_spm {
     public func another() {
         print("some another func")
     }
+
+    private func test_main_branch() {
+        
+    }
 }
