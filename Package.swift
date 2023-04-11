@@ -22,14 +22,6 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "YandexMapsSpm",
-            dependencies: []
-        ),
-        .testTarget(
-            name: "YandexMapsSpmTests",
-            dependencies: ["YandexMapsSpm"]
-        ),
         .binaryTarget(
             name: "YandexMapsSpm",
             url: "https://maps-ios-pods-public.s3.yandex.net/YandexMapsMobile-4.3.1-full.framework.zip",
