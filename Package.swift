@@ -24,9 +24,16 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "test_yandex_spm",
-            dependencies: []),
+            dependencies: []
+        ),
         .testTarget(
             name: "test_yandex_spmTests",
-            dependencies: ["test_yandex_spm"]),
+            dependencies: ["test_yandex_spm"]
+        ),
+        .binaryTarget(
+            name: "YandexMapsMobile",
+            url: "https://maps-ios-pods-public.s3.yandex.net/YandexMapsMobile-4.3.1-full.framework.zip",
+            checksum: "bc1a2fa1320a2e98103944020f6ff28c4114294c2d4963779d18c2de88527cb1"
+        ),
     ]
 )
