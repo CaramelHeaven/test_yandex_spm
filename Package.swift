@@ -30,10 +30,10 @@ let package = Package(
             name: "YandexMapsSpmTests",
             dependencies: ["YandexMapsSpm"]
         )
-        // .binaryTarget(
-        //     name: "YandexMapsMobile",
-        //     url: "https://maps-ios-pods-public.s3.yandex.net/YandexMapsMobile-4.3.1-full.framework.zip",
-        //     checksum: "bc1a2fa1320a2e98103944020f6ff28c4114294c2d4963779d18c2de88527cb1"
-        // ),
+        .binaryTarget(
+            name: "YandexMapsMobile",
+            url: "https://maps-ios-pods-public.s3.yandex.net/YandexMapsMobile-4.3.1-full.framework.zip",
+            checksum: "bc1a2fa1320a2e98103944020f6ff28c4114294c2d4963779d18c2de88527cb1"
+        ),
     ]
 )
